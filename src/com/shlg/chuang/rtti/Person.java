@@ -1,6 +1,6 @@
 package com.shlg.chuang.rtti;
 
-class Person {
+public class Person {
 
 	public final String first;
 	
