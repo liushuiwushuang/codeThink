@@ -3,6 +3,7 @@ package com.shlg.chuang.collect;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
@@ -23,6 +24,8 @@ public class ModifyingArraysAsList {
 		Collections.shuffle(list2,rand);
 		System.out.println("After shuffling: "+ list2);
 		System.out.println("array: " + Arrays.toString(ia));
+		
+		List l = new LinkedList<>(); 
 	}
 
 }

@@ -1,19 +1,19 @@
 package com.shlg.chuang.innerc;
 
 public class Parcel7 {
-	
-	public Contents contents() {
-		return new Contents() {
-			private int i =11;
-			public int value() {
-				return i;
-			}
-		}; //Semicolon required in this case
-	}
+    
+    public Contents contents() {
+        return new Contents() {
+            private int i =11;
+            public int value() {
+                return i;
+            }
+        }; //Semicolon required in this case
+    }
 
-	public static void main(String[] args) {
-		Parcel7 p = new Parcel7();
-		Contents c = p.contents();
-	}
+    public static void main(String[] args) {
+        Parcel7 p = new Parcel7();
+        Contents c = p.contents();
+    }
 
 }
