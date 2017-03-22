@@ -1,12 +1,19 @@
 package com.shlg.chuang.think5_7_3;
 
 public class Chess extends BoardGame {
+    
+    static {
+        System.out.println("Chess Static");
+    }
+    
+    {
+        System.out.println("Chess Normal");
+    }
 
 	Integer k = 2;
 	
 	Chess(int i) {
 		super(i);
-		// TODO Auto-generated constructor stub
 	}
 	
 	int getK() {
@@ -41,6 +48,15 @@ class Game {
 }
 
 class BoardGame extends Game {
+    
+    static {
+        System.out.println("BreadGame Static");
+    }
+    
+    {
+        System.out.println("BreadGame Normal");
+    }
+    
 	protected Integer k = 1;
 	BoardGame(int i) {
 		super(i);
