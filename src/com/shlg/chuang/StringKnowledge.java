@@ -1,5 +1,8 @@
 package com.shlg.chuang;
 
+import java.util.HashMap;
+import java.util.Hashtable;
+
 import com.shlg.chuang.other.OtherPackageHello;
 
 /*
@@ -7,9 +10,9 @@ import com.shlg.chuang.other.OtherPackageHello;
  */
 public class StringKnowledge {
     
-    private String c = "abc";
+    private String c = new String("abc");
    
-    private String d = "abc";
+    private String d = new String("abc");
     
     private void apartEqualsOrCharEqual() {
         String a = "abc";
@@ -20,6 +23,32 @@ public class StringKnowledge {
         
         Integer ai = 7;
         Integer bi = 7;
+        
+//        Object
+        char[] cha = {'a', 'b', 'c'};
+        d.equals(cha); // false
+        
+//        StringTokenizer
+//        StringBuffer
+//        String
+        
+//        Throwable
+//        Exception
+//        RuntimeException
+//        Error
+        
+//        InputStream
+//        FilterInputStream
+//        BufferedInputStream
+        
+//        Reader
+        int op = 100;
+        Integer up = 100;
+        Integer upk = new Integer(100);
+        System.out.println(op == up);
+        System.out.println(up == op);
+        System.out.println(up == upk);
+        System.out.println(op == upk);
         
         Integer ci = new Integer(7);
         Integer di = new Integer(7);
@@ -128,6 +157,9 @@ public class StringKnowledge {
         sk.objPoolTest();
         
         sk.addString();
+        
+        new HashMap<>();
+        new Hashtable<>();
     }
     
     
