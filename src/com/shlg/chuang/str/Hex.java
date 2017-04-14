@@ -1,5 +1,9 @@
 package com.shlg.chuang.str;
 
+import java.io.File;
+
+import com.shlg.chuang.io.BinaryFile;
+
 public class Hex {
 
 	public static String format(byte[] data) {
@@ -18,9 +22,8 @@ public class Hex {
 	
 	public static void main(String[] args) throws Exception {
 		if(args.length == 0)
-//			System.out.println(format(BinaryFile.read("Hex.class")));
-			;
+			System.out.println(format(BinaryFile.read("bin/com/shlg/chuang/str/Hex.class")));
 		else
-			;
+			System.out.println(format(BinaryFile.read(new File(args[0]))));
 	}
 }

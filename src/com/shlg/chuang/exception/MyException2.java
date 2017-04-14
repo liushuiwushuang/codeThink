@@ -6,7 +6,6 @@ class MyException2 extends Exception {
 	private int x;
 	
 	public MyException2() {
-		
 	}
 	
 	public MyException2(String msg) {

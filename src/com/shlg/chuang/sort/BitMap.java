@@ -31,6 +31,9 @@ public class BitMap {
         words[WORD_OFFSET(n)] &= ~ (1 << BIT_OFFSET(n));
     }
     
+    /*
+     * 精妙
+     */
     boolean getBit(int[] words, int n) {
         int bit = words[WORD_OFFSET(n)] & (1 << BIT_OFFSET(n));
         return bit != 0;

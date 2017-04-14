@@ -33,6 +33,11 @@ public abstract class PetCreator {
     public ArrayList<Pet> arrayList(int size) {
         ArrayList<Pet> result = new ArrayList<Pet>();
         Collections.addAll(result, createArray(size));
+//        System.out.println("result: " + result);
+//        Integer i = 0;
+        // 点用的是 remove(Object) 方法。这里返回 false
+//        boolean L = result.remove(i); 
+//        System.out.println("L = " + L);
         return result;
     }
 }

@@ -39,6 +39,7 @@ public class MultiIterableClass extends IterableClass {
 	
 	public Iterable<String> randomized() {
 		return new Iterable<String>() {
+		    
 			public Iterator<String> iterator() {
 				List<String> shuffled = 
 						new ArrayList<String>(Arrays.asList(words));

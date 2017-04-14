@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class QueueDemo {
 	
-	public static void printQ(Queue queue) {
+	public static void printQ(Queue<? extends Object> queue) {
 		while(queue.peek() != null) {
 			System.out.print(queue.remove() + " ");
 		}

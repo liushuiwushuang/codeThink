@@ -12,6 +12,10 @@ public class ArrayIsNotIterable {
 	public static void main(String[] args) {
 		test(Arrays.asList(1,2,3));
 		String[] strings = {"A", "B", "C" };
+		for (String s : strings) {
+		    System.out.println(s);
+		}
+		// test(strings); // 编译失败
 		test(Arrays.asList(strings));
 	}
 

@@ -6,12 +6,9 @@ import java.util.Iterator;
 
 class ReversibleArrayList<T> extends ArrayList<T> {
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -4939328964786114816L;
+    private static final long serialVersionUID = -456823204694050646L;
 
-	public ReversibleArrayList(Collection<T> c) { 
+    public ReversibleArrayList(Collection<T> c) {
 		super(c); 
 	}
 	

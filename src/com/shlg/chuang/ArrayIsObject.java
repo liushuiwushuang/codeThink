@@ -20,7 +20,6 @@ public class ArrayIsObject {
         }
         
         char[] ca = "aaa".toCharArray();
-        
     }
 
 }
