@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.shlg.chuang.think_17_09.Cat;
-import com.shlg.chuang.think_17_09.Cymric;
-import com.shlg.chuang.think_17_09.Dog;
-import com.shlg.chuang.think_17_09.Mutt;
-import com.shlg.chuang.think_17_09.Pet;
-import com.shlg.chuang.think_17_09.Pug;
+import com.shlg.chuang.collection_17_09.Cat;
+import com.shlg.chuang.collection_17_09.Cymric;
+import com.shlg.chuang.collection_17_09.Dog;
+import com.shlg.chuang.collection_17_09.Mutt;
+import com.shlg.chuang.collection_17_09.Pet;
+import com.shlg.chuang.collection_17_09.Pug;
 
 public class MapOfList {
     

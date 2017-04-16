@@ -18,6 +18,7 @@ public class BetterRead {
 		System.out.format("Hi %s.\n", name);
 		System.out.format("In 5 years you will be %d.\n", age + 5);
 		System.out.format("My favorite double is %f.", favorite /2);
+		stdin.close();
 	}
 
 }

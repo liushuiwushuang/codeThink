@@ -1,4 +1,4 @@
-package com.shlg.chuang.think_17_09;
+package com.shlg.chuang.collection_17_09;
 
 import java.util.ArrayList;
 import java.util.Collections;

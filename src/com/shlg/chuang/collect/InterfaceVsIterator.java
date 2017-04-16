@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.shlg.chuang.think_17_09.Pet;
-import com.shlg.chuang.think_17_09.Pets;
+import com.shlg.chuang.collection_17_09.Pet;
+import com.shlg.chuang.collection_17_09.Pets;
 
 public class InterfaceVsIterator {
     

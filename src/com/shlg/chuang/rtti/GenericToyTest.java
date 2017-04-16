@@ -7,6 +7,8 @@ public class GenericToyTest {
 		FancyToy fancyToy = ftClass.newInstance();
 		Class<? super FancyToy> up = ftClass.getSuperclass();
 		Object obj = up.newInstance();
+		System.out.println(fancyToy);
+		System.out.println(obj);
 	}
 
 }

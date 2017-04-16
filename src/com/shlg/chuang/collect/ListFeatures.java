@@ -5,11 +5,11 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import com.shlg.chuang.think_17_09.Cymric;
-import com.shlg.chuang.think_17_09.Hamster;
-import com.shlg.chuang.think_17_09.Mouse;
-import com.shlg.chuang.think_17_09.Pet;
-import com.shlg.chuang.think_17_09.Pets;
+import com.shlg.chuang.collection_17_09.Cymric;
+import com.shlg.chuang.collection_17_09.Hamster;
+import com.shlg.chuang.collection_17_09.Mouse;
+import com.shlg.chuang.collection_17_09.Pet;
+import com.shlg.chuang.collection_17_09.Pets;
 
 public class ListFeatures {
 

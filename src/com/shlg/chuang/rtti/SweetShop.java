@@ -6,11 +6,16 @@ public class SweetShop {
 		System.out.println("inside main");
 		new Candy();
 		try {
-			Class.forName("com.shlg.chuang.rtti.Gum");
-		} catch (ClassNotFoundException e) {
+		    Class c = Gum.class;
+		    c.newInstance();
+		    new Gum();
+		    Class.forName("com.shlg.chuang.rtti.Gum");
+			Class.forName("com.shlg.chuang.rtti.Gum").newInstance();
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
 			System.out.println("Couldn't find Gum");
 		}
 		new Cookie();
+		System.out.println("After creating Cookie");
 	}
 
 }

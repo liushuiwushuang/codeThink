@@ -2,7 +2,7 @@ package com.shlg.chuang.rtti;
 
 public class ToyTest {
 	
-	static void printInfo(Class cc) {
+	static void printInfo(Class<?> cc) {
 		System.out.println("Class name: " + cc.getName() +
 							" is interface? [" + cc.isInterface() + "]");
 		System.out.println("Simple name: " + cc.getSimpleName());
@@ -10,7 +10,7 @@ public class ToyTest {
 	}
 
 	public static void main(String[] args) {
-		Class c = null;
+		Class<?> c = null;
 		try {
 			c = Class.forName("com.shlg.chuang.rtti.FancyToy");
 		} catch (ClassNotFoundException e) {
@@ -18,9 +18,9 @@ public class ToyTest {
 			System.exit(1);
 		}
 		printInfo(c);
-		for(Class face : c.getInterfaces())
+		for(Class<?> face : c.getInterfaces())
 			printInfo(face);
-		Class up = c.getSuperclass();
+		Class<?> up = c.getSuperclass();
 		Object obj = null;
 		try {
 			FancyToy f = (FancyToy) c.newInstance();

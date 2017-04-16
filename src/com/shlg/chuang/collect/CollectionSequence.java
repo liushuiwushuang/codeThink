@@ -3,8 +3,8 @@ package com.shlg.chuang.collect;
 import java.util.AbstractCollection;
 import java.util.Iterator;
 
-import com.shlg.chuang.think_17_09.Pet;
-import com.shlg.chuang.think_17_09.Pets;
+import com.shlg.chuang.collection_17_09.Pet;
+import com.shlg.chuang.collection_17_09.Pets;
 
 public class CollectionSequence extends AbstractCollection<Pet>{
     

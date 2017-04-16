@@ -1,4 +1,4 @@
-package com.shlg.chuang.think_17_09;
+package com.shlg.chuang.collection_17_09;
 
 public class Mouse extends Rodent {
 
