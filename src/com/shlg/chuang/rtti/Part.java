@@ -10,8 +10,9 @@ class Part {
 		return getClass().getSimpleName();
 	}
 	
-	static List<Factory<?extends Part>> partFactories = new 
+	static List<Factory<? extends Part>> partFactories = new 
 			ArrayList<Factory<? extends Part>>();
+	
 	static {
 		partFactories.add(new FuelFilter.Factory());
 		partFactories.add(new AirFilter.Factory());
@@ -20,7 +21,6 @@ class Part {
 		partFactories.add(new FanBelt.Factory());
 		partFactories.add(new PowerSteeringBelt.Factory());
 		partFactories.add(new GeneratorBelt.Factory());
-		
 	}
 	
 	private static Random rand = new Random(47);
@@ -29,4 +29,5 @@ class Part {
 		int n = rand.nextInt(partFactories.size());
 		return partFactories.get(n).create();
 	}
+	
 }
