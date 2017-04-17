@@ -14,7 +14,7 @@ public class IterableFibonacci extends Fibeonacci implements Iterable<Integer> {
 
 			@Override
 			public boolean hasNext() {
-				return n>0; 
+				return n > 0; 
 			}
 
 			@Override

@@ -10,7 +10,7 @@ public class ThreeTuple<A, B, C> extends TwoTuple<A, B> {
 	}
 	
 	public String toString() {
-		return "(" +first+ ")";
+		return "(" + first + ", " + second +  ", " + third + ")";
 	}
 	
 }

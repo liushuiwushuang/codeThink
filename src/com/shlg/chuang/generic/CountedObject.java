@@ -6,8 +6,9 @@ public class CountedObject {
 	
 	private final long id = counter++;
 	
-	public long id() {return id; }
+	public long id() { return id; }
 	
+	@Override
 	public String toString() {
 		return "CountedObject " + id;
 	}

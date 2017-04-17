@@ -2,11 +2,11 @@ package com.shlg.chuang.generic;
 
 public class LinkedStack<P> {
 	
-	private static class Node<C> {
+    private static class Node<C> {
 		C item;
 		Node<C> next;
 		Node() {
-			item =null; next = null;
+			item = null; next = null;
 		}
 		Node(C item, Node<C> next) {
 			this.item = item;
@@ -32,7 +32,7 @@ public class LinkedStack<P> {
 	
 	public static void main(String[] args) {
 		LinkedStack<String> lss = new LinkedStack<String>();
-		for(String s: "Phasers on stun!".split(" "))
+		for(String s : "Phasers on stun!".split(" "))
 			lss.push(s);
 		String s;
 		while((s = lss.pop()) != null)

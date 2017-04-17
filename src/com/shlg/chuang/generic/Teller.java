@@ -10,6 +10,7 @@ class Teller {
 		
 	}
 	
+	@Override
 	public String toString() {
 		return "Teller " + id;
 	}

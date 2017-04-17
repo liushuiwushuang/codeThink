@@ -4,16 +4,18 @@ import java.util.ArrayList;
 
 public class Store extends ArrayList<Aisle> {
 
-	private ArrayList<CheckoutStand> checkouts = 
-			new ArrayList<CheckoutStand>();
-	
-	private Office office = new Office();
+    private static final long serialVersionUID = 1L;
+
+//    private ArrayList<CheckoutStand> checkouts = new ArrayList<>();
+//	
+//	private Office office = new Office();
 	
 	public Store(int nAisles, int nShelves, int nProducts) {
-		for(int i=0; i<nAisles; i++)
+		for(int i=0; i < nAisles; i++)
 			add(new Aisle(nShelves, nProducts));
 	}
 	
+	@Override
 	public String toString() {
 		StringBuilder result = new StringBuilder();
 		for(Aisle a: this)

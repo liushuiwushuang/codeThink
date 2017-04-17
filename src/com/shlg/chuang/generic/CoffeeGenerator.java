@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
 
-	private Class[] types = { Latte.class, Mocha.class,
+	private Class<?>[] types = { Latte.class, Mocha.class,
 			Cappuccino.class, Americano.class, Breve.class, };
 	
 	private static Random rand = new Random(47);
@@ -29,7 +29,7 @@ public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
 	@Override
 	public Coffee next() {
 		try {
-			return (Coffee)types[rand.nextInt(types.length)].newInstance();
+			return (Coffee) types[rand.nextInt(types.length)].newInstance();
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
@@ -38,6 +38,7 @@ public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
 	class CoffeeIterator implements Iterator<Coffee> {
 
 		int count  = size;
+		
 		@Override
 		public boolean hasNext() {
 			return count > 0;

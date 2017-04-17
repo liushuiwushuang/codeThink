@@ -7,9 +7,9 @@ public class BasicGenerator<T> implements Generator<T> {
 	public BasicGenerator(Class<T> type) {
 		this.type = type;
 	}
+	
 	@Override
 	public T next() {
-		// TODO Auto-generated method stub
 		try {
 			return type.newInstance();
 		} catch(Exception e) {
