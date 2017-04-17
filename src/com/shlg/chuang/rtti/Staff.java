@@ -3,8 +3,10 @@ package com.shlg.chuang.rtti;
 import java.util.ArrayList;
 
 public class Staff extends ArrayList<Position> {
-	
-	public void add(String title, Person person) {
+    
+    private static final long serialVersionUID = 1L;
+
+    public void add(String title, Person person) {
 		add(new Position(title,person));
 	}
 	

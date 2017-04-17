@@ -1,6 +1,6 @@
 package com.shlg.chuang.rtti;
 
-class AnnoymousA {
+class AnonymousA {
 	
 	public static A makeA() {
 		return new A() {

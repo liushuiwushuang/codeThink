@@ -14,14 +14,18 @@ public class Person {
 		this.address = address;
 	}
 	
+	@Override
 	public String toString() {
 		return "Person: " + first + " " + last + " " + address;
 	}
 	
 	public static class NullPerson extends Person implements Null {
+	    
 		private NullPerson() {
 			super("None", "None", "None");
 		}
+		
+		@Override
 		public String toString() {
 			return "NullPerson";
 		}

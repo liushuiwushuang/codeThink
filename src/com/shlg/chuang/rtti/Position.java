@@ -11,7 +11,6 @@ class Position {
 		person = employee;
 		if(person == null)
 			person = Person.NULL;
-		
 	}
 	
 	public Position(String jobTitle) {
