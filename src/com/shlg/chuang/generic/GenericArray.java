@@ -5,7 +5,7 @@ public class GenericArray<T> {
 	private T[] array;
 	
 	@SuppressWarnings("unchecked")
-	public GenericArray(int sz) {
+    public GenericArray(int sz) {
 		array = (T[])new Object[sz];
 	}
 	
@@ -23,6 +23,9 @@ public class GenericArray<T> {
 	
 	public static void main(String[] args) {
 		GenericArray<Integer> gai = new GenericArray<Integer>(10);
+		// ClassCastException
+//		Integer[] ia = gai.rep();
 		Object[] oa = gai.rep();
+		System.out.println(oa);
 	}
 }

@@ -4,7 +4,6 @@ public class Solid2<T extends Dimension & HasColor & Weight> extends ColoredDime
 
 	Solid2(T item) {
 		super(item);
-		// TODO Auto-generated constructor stub
 	}
 	
 	int weight() {

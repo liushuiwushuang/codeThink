@@ -8,7 +8,6 @@ class SerialNumbered2 extends Decorator {
 
 	public SerialNumbered2(BasicClass basicCLass) {
 		super(basicCLass);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public long getSerivalNumber() {

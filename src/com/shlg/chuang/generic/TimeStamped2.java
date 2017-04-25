@@ -8,7 +8,6 @@ class TimeStamped2 extends Decorator {
 
 	public TimeStamped2(BasicClass basicCLass) {
 		super(basicCLass);
-		// TODO Auto-generated constructor stub
 		timeStamp = new Date().getTime();
 	}
 	

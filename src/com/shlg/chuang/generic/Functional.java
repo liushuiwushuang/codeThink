@@ -47,8 +47,7 @@ public class Functional {
 
 		@Override
 		public Integer combine(Integer x, Integer y) {
-			// TODO Auto-generated method stub
-			return x+y;
+			return x + y;
 		}
 		
 	}
@@ -57,7 +56,6 @@ public class Functional {
 
 		@Override
 		public Integer combine(Integer x, Integer y) {
-			// TODO Auto-generated method stub
 			return x - y;
 		}
 		
@@ -67,7 +65,6 @@ public class Functional {
 
 		@Override
 		public BigDecimal combine(BigDecimal x, BigDecimal y) {
-			// TODO Auto-generated method stub
 			return x.add(y);
 		}
 		
@@ -77,7 +74,6 @@ public class Functional {
 
 		@Override
 		public BigInteger combine(BigInteger x, BigInteger y) {
-			// TODO Auto-generated method stub
 			return x.add(y);
 		}
 		
@@ -87,7 +83,6 @@ public class Functional {
 
 		@Override
 		public AtomicLong combine(AtomicLong x, AtomicLong y) {
-			// TODO Auto-generated method stub
 			return new AtomicLong(x.addAndGet(y.get()));
 		}
 		
@@ -97,7 +92,6 @@ public class Functional {
 
 		@Override
 		public BigDecimal function(BigDecimal x) {
-			// TODO Auto-generated method stub
 			return x.ulp();
 		}
 		
@@ -113,7 +107,6 @@ public class Functional {
 		
 		@Override
 		public boolean test(T x) {
-			// TODO Auto-generated method stub
 			return x.compareTo(bound) > 0;
 		}
 		
@@ -125,14 +118,12 @@ public class Functional {
 
 		@Override
 		public Integer function(Integer x) {
-			// TODO Auto-generated method stub
 			val *=x;
 			return val;
 		}
 
 		@Override
 		public Integer result() {
-			// TODO Auto-generated method stub
 			return val;
 		}
 		

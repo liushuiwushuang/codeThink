@@ -23,7 +23,7 @@ public class Holder<T> {
 	}
 	
 	public static void main(String[] args) {
-		Holder<Apple> apple = new Holder<Apple>(new Apple());
+		Holder<Apple> apple = new Holder<>(new Apple());
 		Apple d = apple.get();
 		apple.set(d);
 		Holder<? extends Fruit> fruit = apple;

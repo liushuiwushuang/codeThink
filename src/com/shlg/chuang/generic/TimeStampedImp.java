@@ -12,7 +12,6 @@ class TimeStampedImp implements TimeStamped {
 	
 	@Override
 	public long getStamp() {
-		// TODO Auto-generated method stub
 		return timeStamp;
 	}
 

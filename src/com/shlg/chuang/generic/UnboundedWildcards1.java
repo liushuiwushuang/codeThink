@@ -12,6 +12,7 @@ public class UnboundedWildcards1 {
 	static void assign1(List list) {
 		list1 = list;
 		list2 = list;
+//		list3 = list;  // Waring: unchecked conversion
 	}
 	
 	static void assign2(List<?> list) {
@@ -26,9 +27,10 @@ public class UnboundedWildcards1 {
 		list3 = list;
 	}
 	
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		assign1(new ArrayList());
 		assign2(new ArrayList());
+//		assign3(new ArrayList()); // Warning: Unchecked conversion
 		
 		assign1(new ArrayList<String>());
 		assign2(new ArrayList<String>());

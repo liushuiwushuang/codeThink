@@ -12,7 +12,6 @@ class AddableCollectionAdapter<T> implements Addable<T> {
 
 	@Override
 	public void add(T item) {
-		// TODO Auto-generated method stub
 		c.add(item);
 	}
 

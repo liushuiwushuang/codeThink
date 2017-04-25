@@ -5,6 +5,7 @@ import java.awt.Color;
 class Colored<T extends HasColor> {
 
 	T item;
+	
 	Colored(T item) {
 		this.item = item;
 	}

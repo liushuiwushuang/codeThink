@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenericWriting {
+    
 	static <T> void writeExact(List<T> list, T item) {
 		list.add(item);
 	}
@@ -14,6 +15,7 @@ public class GenericWriting {
 	
 	static void f1() {
 		writeExact(apples, new Apple());
+//		writeExact(fruit, new Apple());
 	}
 	
 	static <T> void writeWithWildcard(List<? super T> list, T item) {
@@ -28,5 +30,7 @@ public class GenericWriting {
 	public static void main(String[] args) {
 		f1();
 		f2();
+		System.out.println(apples);
+		System.out.println(fruit);
 	}
 }

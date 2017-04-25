@@ -11,9 +11,10 @@ public class CaptureConversion {
 		f1(holder);
 	}
 	
-	@SuppressWarnings("unchecked")
+//	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		Holder raw = new Holder<Integer>(1);
+		f1(raw);
 		f2(raw);
 		Holder rawBasic = new Holder();
 		rawBasic.set(new Object());

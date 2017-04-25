@@ -41,6 +41,8 @@ public class GenericReading {
 	}
 	
 	public static void main(String[] args) {
-		f1(); f2(); f3();
+		f1(); 
+		f2(); 
+		f3();
 	}
 }

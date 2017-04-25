@@ -23,7 +23,7 @@ public class GenericArrayWithTypeToken<T> {
 	
 	public static void main(String[] args) {
 		GenericArrayWithTypeToken<Integer> gai = 
-				new GenericArrayWithTypeToken<Integer>(Integer.class, 10);
+				new GenericArrayWithTypeToken<>(Integer.class, 10);
 		Integer[] ia = gai.rep();
 		System.out.println(ia);
 	}

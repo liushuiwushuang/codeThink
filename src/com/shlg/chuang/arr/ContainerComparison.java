@@ -28,5 +28,10 @@ public class ContainerComparison {
 		intList.add(97);
 		System.out.println(intList);
 		System.out.println(intList.get(4));
+		
+//		List<Integer> intList2 = Arrays.asList(0, 1, 2, 3, 4, 5);
+////		 UnsupportedOperationException
+//		intList2.add(7);
+//		System.out.println(intList2);
 	}
 }

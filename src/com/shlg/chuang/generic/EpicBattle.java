@@ -4,9 +4,8 @@ import java.util.List;
 
 public class EpicBattle {
 
-	static <POWER extends SuperHearing> 
-			void useSuperHearing(SuperHero<POWER> hero) {
-		
+	static <POWER extends SuperHearing>
+	void useSuperHearing(SuperHero<POWER> hero) {
 		hero.getPower().hearSubtleNoises();
 	}
 	
@@ -21,5 +20,6 @@ public class EpicBattle {
 		useSuperHearing(dogBoy);
 		superFind(dogBoy);
 		List<? extends SuperHearing> audioBoys; 
+//		List<? extends SuperHearing & SuperSmell> dogboys;
 	}
 }

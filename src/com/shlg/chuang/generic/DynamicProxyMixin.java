@@ -8,7 +8,7 @@ public class DynamicProxyMixin {
 				Tuple.tuple(new TimeStampedImp(), TimeStamped.class),
 				Tuple.tuple(new SerialNumberedImp(), SerialNumbered.class)
 				);
-		Basic b = (Basic)mixin;
+		Basic b = (Basic) mixin;
 		TimeStamped t = (TimeStamped) mixin;
 		SerialNumbered s = (SerialNumbered) mixin;
 		b.set("Hello");

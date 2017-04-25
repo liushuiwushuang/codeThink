@@ -6,4 +6,5 @@ public class CreatorGeneric {
 		Creator c = new Creator();
 		c.f();
 	}
+	
 }

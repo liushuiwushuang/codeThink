@@ -10,12 +10,11 @@ class MixinProxy implements InvocationHandler {
 	
 	Map<String, Object> delegateByMethod;
 	
-	@SafeVarargs
 	public MixinProxy(TwoTuple<?, ?>... pairs) {
 		delegateByMethod = new HashMap<String, Object>();
 		String methodName = "";
 		for(TwoTuple<?, ?> pair: pairs) {
-			for(Method method: ((Class) pair.second).getMethods())
+			for(Method method: ((Class<?>) pair.second).getMethods())
 				methodName = method.getName();
 				if(!delegateByMethod.containsKey(methodName))
 					delegateByMethod.put(methodName, pair.first);
@@ -24,18 +23,15 @@ class MixinProxy implements InvocationHandler {
 
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		// TODO Auto-generated method stub
 		String methodName = method.getName();
 		Object delegate = delegateByMethod.get(methodName);
 		return method.invoke(delegate, args);
 	}
 	
-	@SuppressWarnings("unchecked")
-	public static Object newInstance(TwoTuple<?, ?>... pairs) {
-		@SuppressWarnings("rawtypes")
-		Class[] interfaces = new Class[pairs.length];
-		for(int i=0; i<pairs.length; i++) {
-			interfaces[i] = (Class)pairs[i].second;
+    public static Object newInstance(TwoTuple<?, ?>... pairs) {
+		Class<?>[] interfaces = new Class[pairs.length];
+		for(int i=0; i < pairs.length; i++) {
+			interfaces[i] = (Class<?>)pairs[i].second;
 		}
 		ClassLoader cl = pairs[0].first.getClass().getClassLoader();
 		return Proxy.newProxyInstance(cl, interfaces, new MixinProxy(pairs));

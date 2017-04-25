@@ -8,13 +8,11 @@ class Mixin extends BasicImp implements TimeStamped, SerialNumbered {
 
 	@Override
 	public long getSerialNumber() {
-		// TODO Auto-generated method stub
 		return serialNumber.getSerialNumber();
 	}
 
 	@Override
 	public long getStamp() {
-		// TODO Auto-generated method stub
 		return timeStamp.getStamp();
 	}
 

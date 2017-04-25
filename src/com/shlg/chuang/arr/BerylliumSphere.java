@@ -6,6 +6,7 @@ class BerylliumSphere {
 	
 	private final long id = counter++;
 	
+	@Override
 	public String toString() {
 		return "Sphere " + id;
 	}

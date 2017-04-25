@@ -3,8 +3,8 @@ package com.shlg.chuang.generic;
 public class FactoryConstraint {
 
 	public static void main(String[] args) {
-		new Foo2<Integer>(new IntegerFactory());
-		new Foo2<Widget>(new Widget.Factory());
+		System.out.println(new Foo2<>(new IntegerFactory()));
+		System.out.println(new Foo2<>(new Widget.Factory()));
 	}
 
 }

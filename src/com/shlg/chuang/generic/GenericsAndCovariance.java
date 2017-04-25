@@ -9,6 +9,7 @@ public class GenericsAndCovariance {
 		List<? extends Fruit> flist = new ArrayList<Apple>();
 		flist.add(null);
 		Fruit f = flist.get(0);
+		System.out.println(f);
 	}
 
 }

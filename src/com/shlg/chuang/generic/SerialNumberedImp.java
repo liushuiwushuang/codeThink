@@ -8,7 +8,6 @@ class SerialNumberedImp implements SerialNumbered {
 	
 	@Override
 	public long getSerialNumber() {
-		// TODO Auto-generated method stub
 		return serialNumber;
 	}
 

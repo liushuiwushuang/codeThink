@@ -10,11 +10,13 @@ public class CovariantArrays {
 		fruit[0] = new Apple();
 		fruit[1] = new Jonathan();
 		try {
+		    // ArrayStoreException
 			fruit[0] = new Fruit();
 		} catch(Exception e) {
 			System.out.println(e);
 		}
 		try {
+		    // ArrayStoreException
 			fruit[0] = new Orange();
 		} catch(Exception e) {
 			System.out.println(e);
