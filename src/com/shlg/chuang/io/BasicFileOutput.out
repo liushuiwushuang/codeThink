@@ -1,0 +1,31 @@
+1: package com.shlg.chuang.io;
+2: 
+3: import java.io.BufferedReader;
+4: import java.io.BufferedWriter;
+5: import java.io.FileWriter;
+6: import java.io.IOException;
+7: import java.io.PrintWriter;
+8: import java.io.StringReader;
+9: import java.util.Date;
+10: 
+11: public class BasicFileOutput {
+12:     
+13:     static String fileJave = "src/com/shlg/chuang/io/BasicFileOutput.java";
+14: 
+15:     static String fileOut = "src/com/shlg/chuang/io/BasicFileOutput.out";
+16:     
+17:     public static void main(String[] args) throws IOException {
+18:         Date startDate = new Date();
+19:         BufferedReader in = new BufferedReader(new StringReader(BufferedInputFile.read(fileJave)));
+20:         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(fileOut)));
+21:         int lineCount = 1;
+22:         String s;
+23:         while ((s = in.readLine()) != null)
+24:             out.println(lineCount++ + ": " + s);
+25:         out.close();
+26:         Date endDate = new Date();
+27:         System.out.println("==========================");
+28:         System.out.println(endDate.getTime() - startDate.getTime());
+29:         System.out.println(BufferedInputFile.read(fileOut));
+30:     }
+31: }
